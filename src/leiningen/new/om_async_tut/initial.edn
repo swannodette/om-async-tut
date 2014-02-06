@@ -1,0 +1,91 @@
+[;; roles
+ {:db/id #db/id[:db.part/user -200]
+  :role/name "professor"}
+ {:db/id #db/id[:db.part/user -201]
+  :role/name "student"}
+
+ ;; classes
+ {:db/id #db/id[:db.part/user]
+  :class/title "The Structure and Interpretation of Computer Programs"
+  :class/id "6001"
+  :class/professor #db/id[:db.part/user -101]
+  :class/students [#db/id[:db.part/user -103]
+                   #db/id[:db.part/user -104]
+                   #db/id[:db.part/user -105]
+                   #db/id[:db.part/user -107]]}
+ {:db/id #db/id[:db.part/user]
+  :class/title "The Structure and Interpretation of Classical Mechanics"
+  :class/id "6946"
+  :class/professor #db/id[:db.part/user -100]
+  :class/students [#db/id[:db.part/user -103]
+                   #db/id[:db.part/user -105]
+                   #db/id[:db.part/user -106]
+                   #db/id[:db.part/user -108]]}
+ {:db/id #db/id[:db.part/user]
+  :class/title "Linear Algebra"
+  :class/id "1806"
+  :class/professor #db/id[:db.part/user -102]
+  :class/students [#db/id[:db.part/user -103]
+                   #db/id[:db.part/user -104]
+                   #db/id[:db.part/user -106]]}
+
+ ;; people
+ {:db/id #db/id[:db.part/user -100]
+  :person/firstName "Gerald"
+  :person/middleName "Jay"
+  :person/lastName "Sussman"
+  :person/email "evalapply@mit.edu"
+  :person/roles [#db/id[:db.part/user -200]]}
+
+ {:db/id #db/id[:db.part/user -101]
+  :person/firstName "Hal"
+  :person/lastName "Abelson"
+  :person/email "metacirc@mit.edu"
+  :person/roles [#db/id[:db.part/user -200]]}
+
+ {:db/id #db/id[:db.part/user -102]
+  :person/firstName "Gilbert"
+  :person/lastName "Strang"
+  :person/email "la@mit.edu"
+  :person/roles [#db/id[:db.part/user -200]]}
+
+ {:db/id #db/id[:db.part/user -103]
+  :person/firstName "Ben"
+  :person/lastName "Bitdiddle"
+  :person/email "ben@mit.edu"
+  :person/roles [#db/id[:db.part/user -201]]}
+
+ {:db/id #db/id[:db.part/user -104]
+  :person/firstName "Alyssa"
+  :person/middleInitial "P"
+  :person/lastName "Hacker"
+  :person/email "ap_hacker@mit.edu"
+  :person/roles [#db/id[:db.part/user -201]]}
+
+ {:db/id #db/id[:db.part/user -105]
+  :person/firstName "Eva"
+  :person/middleName "Lu"
+  :person/lastName "Ator"
+  :person/email "lisp15@mit.edu"
+  :person/roles [#db/id[:db.part/user -201]]}
+
+ {:db/id #db/id[:db.part/user -106]
+  :person/firstName "Louis"
+  :person/lastName "Reasoner"
+  :person/email "prolog@mit.edu"
+  :person/roles [#db/id[:db.part/user -201]]}
+
+ {:db/id #db/id[:db.part/user -107]
+  :person/firstName "Cy"
+  :person/middleInitial "D"
+  :person/lastName "Effect"
+  :person/email "bugs@mit.edu"
+  :person/roles [#db/id[:db.part/user -201]]}
+
+ {:db/id #db/id[:db.part/user -108]
+  :person/firstName "Lem"
+  :person/middleInitial "E"
+  :person/lastName "Tweakit"
+  :person/email "morebugs@mit.edu"
+  :person/roles [#db/id[:db.part/user -201]]}
+  ]
