@@ -1,4 +1,4 @@
-(ns {{sanitized}}.core
+(ns {{name}}.core
   (:require [cljs.reader :as reader]
             [goog.events :as events]
             [goog.dom :as gdom]

@@ -1,4 +1,4 @@
-(ns {{sanitized}}.util
+(ns {{name}}.util
   (:require [datomic.api :as d]
             [clojure.java.io :as io]
             [clojure.edn :as edn])
