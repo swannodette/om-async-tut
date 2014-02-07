@@ -11,7 +11,7 @@
                  [om "0.3.6"]
                  [compojure "1.1.6"]
                  [fogus/ring-edn "0.2.0"]
-                 [com.datomic/datomic-free "0.9.4497"]]
+                 [com.datomic/datomic-free "0.9.4532"]]
 
   :plugins [[lein-cljsbuild "1.0.2"]]
 
