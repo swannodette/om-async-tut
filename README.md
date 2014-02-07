@@ -1,11 +1,12 @@
 # om-async-tut
 
-Template for the Om [Async Application State] tutorial.
+Template for the Om
+[Intermediate Tutorial](http://github.com/swannodette/om/wiki/Intermediate-Tutorial).
 
 ## Usage
 
 ```
-lein new om-async-tut om-async-tut
+lein new om-async-tut <project-name>
 ```
 
 ## License
