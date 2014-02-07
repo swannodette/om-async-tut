@@ -25,3 +25,8 @@
 
 (defn load-data []
   (transact-all (get-conn) (io/resource "data/initial.edn")))
+
+(defn init-db []
+  (create-db)
+  (load-schema)
+  (load-data))
