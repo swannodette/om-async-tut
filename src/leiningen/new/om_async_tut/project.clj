@@ -10,7 +10,7 @@
                  [org.clojure/clojurescript "0.0-2156"]
                  [ring/ring "1.2.1"]
                  [org.clojure/core.async "0.1.267.0-0d7780-alpha"]
-                 [om "0.4.0"]
+                 [om "0.4.1"]
                  [compojure "1.1.6"]
                  [fogus/ring-edn "0.2.0"]
                  [com.datomic/datomic-free "0.9.4532"]]
