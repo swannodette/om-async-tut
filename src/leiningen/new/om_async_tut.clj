@@ -11,6 +11,7 @@
     (main/info "Generating fresh 'lein new' om-async-tut project.")
     (->files data
       ["project.clj" (render "project.clj" data)]
+      [".gitignore" (render "giignore" data)]
       ["resources/data/schema.edn" (render "schema.edn" data)]
       ["resources/data/initial.edn" (render "initial.edn" data)]
       ["resources/public/html/index.html" (render "index.html" data)]
