@@ -26,11 +26,13 @@
   :clean-targets ^{:protect false} ["resources/public/js/out"
                                     "resources/public/js/main.js"]
 
-  :cljsbuild {
-              :builds [{:id "dev"
+  :ring {:handler {{name}}.core/app}
+
+  :cljsbuild {:builds [{:id "dev"
                         :source-paths ["src/clj" "src/cljs"]
-                        :compiler {
-                                   :output-to "resources/public/js/main.js"
+                        :compiler {:output-to "resources/public/js/main.js"
                                    :output-dir "resources/public/js/out"
+                                   :main {{name}}.core
+                                   :asset-path "js/out"
                                    :optimizations :none
                                    :source-map true}}]})
