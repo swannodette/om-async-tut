@@ -13,4 +13,4 @@
 
 (println "Hello world!")
 
-(fw/start {:websocket-url "ws://localhost:3449/figwheel-ws"})
+(fw/start {})

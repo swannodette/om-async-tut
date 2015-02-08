@@ -48,9 +48,6 @@
     (update-class (:id params) edn-params))
   (route/files "/" {:root "resources/public"}))
 
-(def app
+(def handler 
   (-> routes
       wrap-edn-params))
-
-(defonce server
-  (run-jetty #'app {:port 8080 :join? false}))
