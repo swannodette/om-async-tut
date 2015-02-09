@@ -1,5 +1,6 @@
 (ns {{name}}.core
   (:require [cljs.reader :as reader]
+            [figwheel.client :as fw]
             [goog.events :as events]
             [goog.dom :as gdom]
             [om.core :as om :include-macros true]
@@ -11,3 +12,5 @@
 (enable-console-print!)
 
 (println "Hello world!")
+
+(fw/start {:websocket-url "ws://localhost:3449/figwheel-ws"})
