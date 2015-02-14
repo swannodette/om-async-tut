@@ -10,7 +10,7 @@
                  [org.clojure/clojurescript "0.0-2850"]
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  [org.omcljs/om "0.8.8"]
-                 [om-sync "0.1.22"]
+                 [om-sync "0.1.5"]
                  [ring "1.3.2"]
                  [compojure "1.3.1"]
                  [figwheel "0.2.4-SNAPSHOT"]
